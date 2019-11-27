@@ -115,7 +115,7 @@ const ContactPage = () => {
           className={contactStyles.map}
           frameborder="0"
           title="Find us"
-          src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJm7CeaitdzB0RImZknB76wdE&key=AIzaSyAMBfr1yxV8tuX1nxijbOxUS2gLSFajIGg"
+          src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJm7CeaitdzB0RImZknB76wdE&key="
           allowfullscreen
         ></iframe>
         <p>
