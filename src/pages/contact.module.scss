@@ -1,0 +1,117 @@
+.visit {
+  margin: 2rem 0 1rem;
+}
+
+.findUs {
+  margin: 0 0 1rem;
+}
+
+form {
+  border-radius: 15px 50px 30px 5px;
+  border-radius: 7.5%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space;
+  border-radius: 7.5%;
+}
+input {
+  width: 72.5%;
+  border-radius: 7.5%;
+}
+
+textarea {
+  width: 72.5%;
+  height: 100px;
+  box-shadow: inset 0 0 2px black;
+  border-radius: 2.5%;
+  font-size: 0.9rem;
+}
+// textarea {
+//   box-shadow: #0a6c74;
+// }
+
+button {
+  text-align: center;
+  background-color: #00689f;
+  color: #ffffff;
+  padding: 0.5em 0 0.5em 0;
+  width: 22.5%;
+  height: 20%;
+  border-radius: 7.5%;
+  flex-grow: inherit;
+  box-shadow: none;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  // background-color: #14919b;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.buttonStyle {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.submit {
+  display: flex;
+  // padding-left: 11rem;
+  padding-top: 1rem;
+  width: 100%;
+}
+
+.contact {
+  font-weight: bold;
+}
+
+.svgResize {
+  flex: 0 0 100%;
+  height: 1.5rem;
+}
+
+.map {
+  // position: absolute;
+  width: 65vh;
+  height: 60vh;
+}
+
+.nb {
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+.list {
+  list-style: none;
+  margin-left: 0;
+}
+
+img:hover {
+  transform: scale(1.25);
+}
+
+h4 {
+  color: #004165;
+}
