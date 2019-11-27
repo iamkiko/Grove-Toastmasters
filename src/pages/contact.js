@@ -111,11 +111,12 @@ const ContactPage = () => {
         </ul>
 
         <h4 className={contactStyles.visit}>Visit us:</h4>
+
         <iframe
           className={contactStyles.map}
-          frameborder="0"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10812.839051099058!2d18.465396090523743!3d-33.970091645721105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd1c1fa1e9c646622!2sKelvin%20Grove%20Club!5e0!3m2!1sen!2sza!4v1574845875175!5m2!1sen!2sza"
           title="Find us"
-          src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJm7CeaitdzB0RImZknB76wdE&key="
+          frameborder="0"
           allowfullscreen
         ></iframe>
         <p>
