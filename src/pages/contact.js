@@ -9,7 +9,7 @@ import contactStyles from "./contact.module.scss"
 const facebook = require("simple-icons/icons/facebook.svg")
 const meetup = require("simple-icons/icons/meetup.svg")
 
-const RECAPTCHA_KEY = process.env.GATSBY_SITE_RECAPTCHA_KEY
+const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY
 
 console.log(RECAPTCHA_KEY)
 if (typeof RECAPTCHA_KEY === "undefined") {
@@ -32,9 +32,9 @@ const ContactPage = () => {
     setState({ ...state, [e.target.name]: e.target.value })
   }
 
-  const handleRecaptcha = value => {
-    setState({ "g-recaptcha-response": value })
-  }
+  // const handleRecaptcha = value => {
+  //   setState({ "g-recaptcha-response": value })
+  // }
 
   const handleSubmit = e => {
     e.preventDefault()
@@ -183,7 +183,7 @@ const ContactPage = () => {
           <Recaptcha
             ref={recaptchaRef}
             sitekey={RECAPTCHA_KEY}
-            onChange={handleRecaptcha}
+            // onChange={handleRecaptcha}
           />
           <div className={contactStyles.submit}>
             <button className={contactStyles.button} type="submit">
