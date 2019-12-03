@@ -44,7 +44,7 @@ const ContactPage = () => {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
-        "form-name": form.getAttribute("contact-recaptcha"),
+        "form-name": form.getAttribute("name"),
         "g-recaptcha-response": recaptchaValue,
         ...state,
       }),
@@ -140,7 +140,7 @@ const ContactPage = () => {
           onSubmit={handleSubmit}
           className={contactStyles.form}
         >
-          <input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="contact-recaptcha" value="Contact Form" />
           <p>
             <label>
               Name:
@@ -183,7 +183,7 @@ const ContactPage = () => {
           <Recaptcha
             ref={recaptchaRef}
             sitekey={RECAPTCHA_KEY}
-            // onChange={handleRecaptcha}
+            onChange={handleRecaptcha}
           />
           <div className={contactStyles.submit}>
             <button className={contactStyles.button} type="submit">
