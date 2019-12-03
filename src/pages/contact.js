@@ -32,6 +32,10 @@ const ContactPage = () => {
     setState({ ...state, [e.target.name]: e.target.value })
   }
 
+  const handleRecaptcha = value => {
+    setState({ "g-recaptcha-response": value })
+  }
+
   const handleSubmit = e => {
     e.preventDefault()
     const form = e.target
@@ -176,7 +180,11 @@ const ContactPage = () => {
               <textarea name="message" onChange={handleChange} required />
             </label>
           </p>
-          <Recaptcha ref={recaptchaRef} sitekey={RECAPTCHA_KEY} />
+          <Recaptcha
+            ref={recaptchaRef}
+            sitekey={RECAPTCHA_KEY}
+            onChange={handleRecaptcha}
+          />
           <div className={contactStyles.submit}>
             <button className={contactStyles.button} type="submit">
               <span className={contactStyles.buttonStyle}>Submit</span>

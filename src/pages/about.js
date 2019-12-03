@@ -9,16 +9,16 @@ const AboutPage = () => {
       <Head title="About" />
       <div>
         <h3 className={aboutStyles.title}>The Team</h3>
-        <p className={aboutStyles.quote}>
+        {/* <p className={aboutStyles.quote}>
           "A drinking group with a public speaking problem" - Priyesh Gosai
-        </p>
+        </p> */}
         <div className={aboutStyles.grid}>
           <div>
-            <img
+            {/* <img
               className={aboutStyles.member}
               src={require("../assets/dude.jpg")}
               alt="dude"
-            />
+            /> */}
             <h4>Andrea Perumal</h4>
             <h5>President</h5>
             <p>
@@ -28,11 +28,11 @@ const AboutPage = () => {
             </p>
           </div>
           <div>
-            <img
+            {/* <img
               className={aboutStyles.member}
               src={require("../assets/dude.jpg")}
               alt="dude"
-            />
+            /> */}
             <h4>Priyesh Gosai</h4>
             <h5>Immediate Past President (IPP) </h5>
             <p>
@@ -42,11 +42,11 @@ const AboutPage = () => {
             </p>
           </div>
           <div>
-            <img
+            {/* <img
               className={aboutStyles.member}
               src={require("../assets/dude.jpg")}
               alt="dude"
-            />
+            /> */}
             <h4>Liz Morris</h4>
             <h5>VP Education</h5>
             <p>
@@ -57,11 +57,11 @@ const AboutPage = () => {
             </p>
           </div>
           <div>
-            <img
+            {/* <img
               className={aboutStyles.member}
               src={require("../assets/dude.jpg")}
               alt="dude"
-            />
+            /> */}
             <h4>Johan Muller</h4>
             <h5>VP Membership</h5>
             <p>
@@ -70,11 +70,11 @@ const AboutPage = () => {
             </p>
           </div>
           <div>
-            <img
+            {/* <img
               className={aboutStyles.member}
               src={require("../assets/dude.jpg")}
               alt="dude"
-            />
+            /> */}
             <h4>Rumbi Paswi</h4>
             <h5>VP Public Relations</h5>
             <p>
@@ -84,11 +84,11 @@ const AboutPage = () => {
             </p>
           </div>
           <div>
-            <img
+            {/* <img
               className={aboutStyles.member}
               src={require("../assets/dude.jpg")}
               alt="dude"
-            />
+            /> */}
             <h4>Michael Clacey</h4>
             <h5>Sergeant-At-Arms</h5>
             <p>
@@ -99,11 +99,11 @@ const AboutPage = () => {
             </p>
           </div>
           <div>
-            <img
+            {/* <img
               className={aboutStyles.member}
               src={require("../assets/dude.jpg")}
               alt="dude"
-            />
+            /> */}
             <h4>Hannah Mort</h4>
             <h5>Secretary</h5>
             <p>
@@ -113,11 +113,11 @@ const AboutPage = () => {
             </p>
           </div>
           <div>
-            <img
+            {/* <img
               className={aboutStyles.member}
               src={require("../assets/dude.jpg")}
               alt="dude"
-            />
+            /> */}
             <h4>Christos Constantinides</h4>
             <h5>Treasurer</h5>
             <p>
