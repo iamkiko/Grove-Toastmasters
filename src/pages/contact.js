@@ -44,7 +44,7 @@ const ContactPage = () => {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
-        "form-name": form.getAttribute("contact-recaptcha"),
+        "form-name": "contact-recaptcha",
         "g-recaptcha-response": recaptchaValue,
         ...state,
       }),
