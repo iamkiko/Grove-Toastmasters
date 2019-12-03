@@ -38,7 +38,7 @@ const ContactPage = () => {
     e.preventDefault()
     const form = e.target
     const recaptchaValue = recaptchaRef.current.getValue()
-    fetch("/", {
+    fetch("/contact", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
@@ -138,7 +138,7 @@ const ContactPage = () => {
           onSubmit={handleSubmit}
           className={contactStyles.form}
         >
-          <input type="hidden" name="contact-recaptcha" value="Contact Form" />
+          <input type="hidden" name="contact" value="Contact Form" />
           <p>
             <label>
               Name:
