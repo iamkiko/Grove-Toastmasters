@@ -11,7 +11,6 @@ const meetup = require("simple-icons/icons/meetup.svg")
 
 const RECAPTCHA_KEY = process.env.GATSBY_SITE_RECAPTCHA_KEY
 
-console.log(RECAPTCHA_KEY)
 if (typeof RECAPTCHA_KEY === "undefined") {
   throw new Error(`
   Env var ITE_RECAPTCHA_KEY is undefined!
@@ -25,7 +24,12 @@ function encode(data) {
 }
 
 const ContactPage = () => {
-  const [state, setState] = React.useState({})
+  const [state, setState] = React.useState({
+    name: "",
+    email: "",
+    number: "",
+    message: "",
+  })
   const recaptchaRef = React.createRef()
 
   const handleChange = e => {
@@ -145,7 +149,13 @@ const ContactPage = () => {
             <label>
               Name:
               <br />
-              <input type="text" name="name" onChange={handleChange} required />
+              <input
+                type="text"
+                name="name"
+                onChange={handleChange}
+                value={name}
+                required
+              />
             </label>
           </p>
           <p>
@@ -156,6 +166,7 @@ const ContactPage = () => {
                 type="email"
                 name="email"
                 onChange={handleChange}
+                value={email}
                 required
               />
             </label>
@@ -169,6 +180,7 @@ const ContactPage = () => {
                 name="phone"
                 pattern="[0-9]{10}"
                 onChange={handleChange}
+                value={number}
                 required
               />
             </label>
@@ -177,7 +189,12 @@ const ContactPage = () => {
             <label>
               Message:
               <br />
-              <textarea name="message" onChange={handleChange} required />
+              <textarea
+                name="message"
+                onChange={handleChange}
+                value={message}
+                required
+              />
             </label>
           </p>
           <Recaptcha
