@@ -9,7 +9,7 @@ import contactStyles from "./contact.module.scss"
 const facebook = require("simple-icons/icons/facebook.svg")
 const meetup = require("simple-icons/icons/meetup.svg")
 
-const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY
+const RECAPTCHA_KEY = process.env.GATSBY_SITE_RECAPTCHA_KEY
 
 console.log(RECAPTCHA_KEY)
 if (typeof RECAPTCHA_KEY === "undefined") {
