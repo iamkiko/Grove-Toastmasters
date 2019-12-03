@@ -138,7 +138,7 @@ const ContactPage = () => {
           onSubmit={handleSubmit}
           className={contactStyles.form}
         >
-          <input type="hidden" name="contact" value="Contact Form" />
+          <input type="hidden" name="form-name" value="contact" />
           <p>
             <label>
               Name:
