@@ -30,10 +30,6 @@ const ContactPage = () => {
     setState({ ...state, [e.target.name]: e.target.value })
   }
 
-  // const handleRecaptcha = value => {
-  //   setState({ "g-recaptcha-response": value })
-  // }
-
   const handleSubmit = e => {
     e.preventDefault()
     const form = e.target
@@ -138,10 +134,7 @@ const ContactPage = () => {
           onSubmit={handleSubmit}
           className={contactStyles.form}
         >
-          <div>
-            <input type="hidden" name="form-name" value="contact-recaptcha" />
-          </div>
-
+          <input type="hidden" name="form-name" value="contact-recaptcha" />
           <p>
             <label>
               Name:
