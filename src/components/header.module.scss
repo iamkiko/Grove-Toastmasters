@@ -2,8 +2,6 @@
 
 .header {
   padding: 1rem 0 0rem;
-  // position: sticky;
-  // top: 0;
 }
 
 .title {
@@ -17,17 +15,15 @@
 }
 
 .title:hover {
-  // font-size: 2.55rem;
-  // transition-duration: 1s;
-  // box-shadow: ;
   transition: width 1s ease, height 0.2s ease, opacity 0.3s ease, color #000000;
-  // font-weight: 600;
+
   height: 85%;
   opacity: 0.85;
 }
 
 .logo:hover {
   opacity: 1;
+  transform: none;
 }
 
 .nav-list {
