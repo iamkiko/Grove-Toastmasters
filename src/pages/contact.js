@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, createRef } from "react"
 import Recaptcha from "react-google-recaptcha"
 import { navigate } from "gatsby-link"
 
@@ -23,8 +23,13 @@ function encode(data) {
 }
 
 const ContactPage = () => {
-  const [state, setState] = React.useState({})
-  const recaptchaRef = React.createRef()
+  const [state, setState] = useState({
+    name: "",
+    email: "",
+    number: "",
+    message: "",
+  })
+  const recaptchaRef = createRef()
 
   const handleChange = e => {
     setState({ ...state, [e.target.name]: e.target.value })
