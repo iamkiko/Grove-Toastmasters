@@ -139,7 +139,10 @@ const ContactPage = () => {
           onSubmit={handleSubmit}
           className={contactStyles.form}
         >
-          <input type="hidden" name="form-name" value="contact" />
+          <div>
+            <input type="hidden" name="form-name" value="contact" />
+          </div>
+
           <p>
             <label>
               Name:
