@@ -23,12 +23,7 @@ function encode(data) {
 }
 
 const ContactPage = () => {
-  const [state, setState] = useState({
-    name: "",
-    email: "",
-    number: "",
-    message: "",
-  })
+  const [state, setState] = useState({})
   const recaptchaRef = createRef()
 
   const handleChange = e => {
@@ -43,7 +38,7 @@ const ContactPage = () => {
     e.preventDefault()
     const form = e.target
     const recaptchaValue = recaptchaRef.current.getValue()
-    fetch("/contact", {
+    fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
