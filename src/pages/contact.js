@@ -134,13 +134,12 @@ const ContactPage = () => {
           method="post"
           action="/thank-you/"
           data-netlify="true"
-          data-netlify-honeypot="bot-field"
           data-netlify-recaptcha="true"
           onSubmit={handleSubmit}
           className={contactStyles.form}
         >
           <div>
-            <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden" name="form-name" value="contact-recaptcha" />
           </div>
 
           <p>
