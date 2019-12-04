@@ -14,6 +14,11 @@ const IndexPage = () => {
         <h3 className={aboutStyles.title}>
           Let's master public speaking together.
         </h3>
+        <img
+          className={aboutStyles.groupPic}
+          src={require("../assets/tm.jpg")}
+          alt="tm-logo"
+        />
         <p>
           Grove is a dinner club that meets on the{" "}
           <span className={aboutStyles.emphasis}>
