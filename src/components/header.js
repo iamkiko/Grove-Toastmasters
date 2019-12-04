@@ -20,7 +20,7 @@ const Header = () => {
           <Link className={headerStyles.title} to="/">
             <img
               className={headerStyles.logo}
-              src={require("../assets/logo.png")}
+              src={require("../assets/logo-final.png")}
               alt="tm-logo"
             />
             {"                 "}
